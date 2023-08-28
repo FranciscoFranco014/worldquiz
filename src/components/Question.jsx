@@ -17,7 +17,7 @@ export const Question = ({
     const [answered, setAnswered] = useState(false) //boolean, nos determina si ya fue conestada la pregunta
     const [answersRandom, setAnswersRandom] = useState([]) 
     const [activeResults, setActiveResults] = useState(false)
-    
+    // const [correctAnswerIndex, setCorrectAnswerIndex] = useState(null)
     useEffect(() => {
         const answers = [
             ...filteredQuestion.incorrect_answers,
@@ -25,6 +25,10 @@ export const Question = ({
         ]
 
         setAnswersRandom(answers.sort(() => Math.random() - 0.5))
+        // const correctIndex = answers.findIndex(answer => answer === filteredQuestion.correct_answer);
+        // setCorrectAnswerIndex(correctIndex)
+
+
     }, [filteredQuestion])    
 
     //checkea si la rta es correcta o no
@@ -39,8 +43,7 @@ export const Question = ({
     const onNextQuestion = () => {
         setIndexQuestion(indexQuestion + 1)
         setSelectAnswerIndex(null) // debe iniciar en null xq si lo inicias en numero la rta se marca
-        setAnswered(false)
-        
+        setAnswered(false)  
     }
 
     const onReset = () => {
@@ -48,6 +51,8 @@ export const Question = ({
         setActiveQuiz(false)
         setIndexQuestion(0)
     }
+
+   
     return(
         
         <>
@@ -63,7 +68,7 @@ export const Question = ({
                 
              
             <div 
-                className="flex flex-col justify-between shadow-md shadow-slate-300 w-[600px] 
+                className="bg-white flex flex-col justify-between shadow-md shadow-slate-300 w-[600px] 
                             h-[600px] p-10 rounded-lg">
                 
                     <div className="flex justify-between">
@@ -79,7 +84,7 @@ export const Question = ({
                         </div>
                     </div>
                 <button 
-                    className="border px-5 py-2 rounded-lg font-bold transition-all hover:bg-yellow-400 hover:text-gray-900"
+                    className="border px-5 py-2 rounded-lg font-bold transition-all hover:bg-blue-200 hover:text-gray-900"
                     onClick={onReset}
                 >
                     Reiniciar
@@ -98,26 +103,31 @@ export const Question = ({
                                     index === selectAnswerIndex
                                      ? answer === filteredQuestion.correct_answer
                                       ? 'bg-green-500' 
-                                      : 'bg-red-500'   
-                                    : ''                             
+                                      : 'bg-red-500' 
+                                    : ''
+                               
+                                 
                                 }`}
+
                                 key={answer}
                                 onClick={() => checkAnswer(answer, index)}
                                 disabled={answered && selectAnswerIndex !== index}
-                                >
+                            >
                                 <p className="font-medium text-center text-sm">
                                     {answer}
                                 </p>
                             </button>
+                            
                         ))
+                        
                     }
-                    
+                  
                 </div>
                 {/* condicional para mostrar el boton de siguiente  o finalizar*/}
                 {
                     indexQuestion + 1 === questionsFiltered.length ? (
                     <button 
-                        className="border-2 border-blue-400 text-blue-600 rounded-md px-5 py-2 hover:bg-blue-400 hover:text-black font-medium transition-all"
+                        className="border-2 border-blue-200 text-blue-600 rounded-md px-5 py-2 hover:bg-blue-200 hover:text-black font-medium transition-all"
                         onClick={() => {
                             setAnswered(false)
                             setActiveResults(true)
@@ -126,7 +136,7 @@ export const Question = ({
                     </button>
                     ) : (
                     <button 
-                        className="border-2 border-blue-400 text-blue-600 rounded-md px-5 py-2 hover:bg-blue-400 hover:text-black font-medium transition-all"
+                        className="border-2 border-blue-200 text-blue-600 rounded-md px-5 py-2 hover:bg-blue-200 hover:text-black font-medium transition-all"
                         onClick={onNextQuestion}>
                             Siguiente Pregunta
                     </button>   

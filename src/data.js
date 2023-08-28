@@ -1,11 +1,11 @@
-import Ciencia from '/assets/ciencia.png';
-import Deportes from '/assets/deportes.png';
-import Filosofia from '/assets/filosofía.png';
-import Geografia from '/assets/geografía.png';
-import Historia from '/assets/historia.png';
-import Literatura from '/assets/literatura.png';
-import Tecnologia from '/assets/tecnología.png';
-import Esports from '/assets/esports.png'
+import Ciencia from '/assets/ciencia.webp';
+import Deportes from '/assets/deportes.webp';
+import Filosofia from '/assets/filosofía.webp';
+import Geografia from '/assets/geografía.webp';
+import Historia from '/assets/historia.webp';
+import Literatura from '/assets/literatura.webp';
+import Tecnologia from '/assets/tecnología.webp';
+import Esports from '/assets/esports.webp'
 
 export const imgs = [
 	Ciencia,

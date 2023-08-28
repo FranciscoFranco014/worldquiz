@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import { questions, imgs } from "../data"
 
 import { Question } from "../components/Question"
+
 // mezclar las preguntas de cada categoria y reducirla a 5
 const shuffleArray = array => {
 	const newArray = array.sort(() => Math.random() - 0.5);
@@ -11,13 +12,13 @@ const shuffleArray = array => {
 };
 
 
-export const CategoryPage = () => {
+export function CategoryPage ()  {
    
     //aca vamos a leer el parametro de la URL
     const { category } = useParams()
     
     const [imgCategory] = imgs.filter(
-		img => img === `/assets/${category.toLowerCase()}.png`
+		img => img === `/assets/${category.toLowerCase()}.webp`
 	);
 
     const [questionsFiltered, setQuestionsFiltered] = useState(
@@ -36,10 +37,11 @@ export const CategoryPage = () => {
 
 
     return (
+       
     <div 
         className="container flex flex-col items-center justify-center gap-10" 
         style={{ height: 'calc(100vh - 10rem)'}}
-    >
+    > 
         {activeQuiz ? (<Question 
             filteredQuestion={questionsFiltered[indexQuestion]}
             setIndexQuestion={setIndexQuestion}
@@ -63,13 +65,12 @@ export const CategoryPage = () => {
                     </div>
                 </div>
                     <button 
-                        className="text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-blue-300 hover:text-gray-900"
+                        className="text-slate-950  bg-blue-200 py-2 rounded-lg font-bold px-5  hover:bg-blue-400 hover:text-black-400 transition-all"
                         onClick={() => setActiveQuiz(true)}>
                             Iniciar Quiz
                     </button>
                 
             </>)}
-        
     </div>
   )
 }

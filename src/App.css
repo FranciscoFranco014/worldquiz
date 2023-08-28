@@ -5,6 +5,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: rgb(219 234 254);
+  /* background-color: rgb(135, 143, 159) */
 }
 
 .logo {

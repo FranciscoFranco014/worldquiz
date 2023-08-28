@@ -3,6 +3,9 @@ import { HomePage } from './pages/routes'
 import { CategoryPage } from './pages/CategoryPage'
 import { Navbar } from './components/Navbar'
 
+
+
+
 export const AppRouter = () => {
   return(
     
