@@ -1003,5 +1003,105 @@ export const questions = [
 		category: esports,
 		correct_answer: 'try dgt max buda dav1deuS',
 		incorrect_answers: ['Luken try meyern dgt b1t', 'try rox max straka baldu', 'dgt max keznit reversive Noktse']
-	}
+	},
+	{
+		id: 96,
+		difficulty: 'Fácil',
+		question: '¿Qué equipo ganó el Campeonato Mundial de Valorant en 2023?',
+		category: esports,
+		correct_answer: 'Evil Geniuses',
+		incorrect_answers: ['PPX', 'FNATIC', 'LEVIATAN']
+	},
+	{
+		id: 97,
+		difficulty: 'Difícil',
+		question: '¿Cuál es el nombre del equipo de fútbol que es el máximo rival de Newells Old Boys?',
+		category: esports,
+		correct_answer: 'Rosario central',
+		incorrect_answers:  ["Boca Juniors", "Independiente", "Racing Club"]
+	},
+	{
+		id: 98,
+		difficulty: "Medio",
+		question: "¿Cuál es el nombre del estadio de la selección argentina de rugby?",
+		category: deportes,
+		correct_answer: "Estadio José Amalfitani",
+		incorrect_answers: ["Estadio Monumental", "Estadio Único de La Plata", "Estadio Alberto J. Armando (La Bombonera)"]
+	},
+	{
+		id: 99,
+		difficulty: "Fácil",
+		question: "¿Quién fue el entrenador de la selección argentina de fútbol en el Mundial 1986?",
+		category: deportes,
+		correct_answer: "Carlos Bilardo",
+		incorrect_answers: ["Diego Maradona", "César Luis Menotti", "José Pékerman"]
+	},
+	{
+		id: 100,
+		difficulty: "Fácil",
+		question: "¿Qué equipo de fútbol argentino es conocido como 'El Xeneize'?",
+		category: deportes,
+		correct_answer: "Boca Juniors",
+		incorrect_answers: ["River Plate", "Independiente", "Racing Club"]
+	},
+	{
+		id: 101,
+		difficulty: "Fácil",
+		question: "¿Qué jugador argentino es conocido como 'La Pulga'?",
+		category: deportes,
+		correct_answer: "Lionel Messi",
+		incorrect_answers: ["Diego Maradona", "Sergio Agüero", "Gonzalo Higuaín"]
+	},
+	{
+		id: 102,
+		difficulty: "Medio",
+		question: "¿En qué año Argentina ganó su primer Mundial de Fútbol?",
+		category: deportes,
+		correct_answer: "1978",
+		incorrect_answers: ["1986", "1990", "2014"]
+	},
+	{
+		id: 103,
+		difficulty: "Medio",
+		question: "¿Cuál de los siguientes equipos de fútbol argentino está actualmente peleando por no descender?",
+		category: deportes,
+		correct_answer: "Independiente",
+		incorrect_answers: ["Boca Juniors", "River Plate", "Racing Club"]
+	},
+	{
+		id: 104,
+		difficulty: "Fácil",
+		question: "¿Cuál de los siguientes jugadores argentinos de baloncesto es conocido como 'Manu'?",
+		category: deportes,
+		correct_answer: "Emanuel Ginóbili",
+		incorrect_answers: ["Andrés Nocioni", "Carlos Delfino", "Luis Scola"]
+	},
+	{
+		"id": 105,
+		"difficulty": "Fácil",
+		"question": "¿Cuál es el equipo más grande del Fútbol Argentino?",
+		"category": deportes,
+		"correct_answer": "Boca Juniors",
+		"incorrect_answers": ["Rosario Central", "San Lorenzo", "River"]
+	},
+	{
+		"id": 106,
+		"difficulty": "Medio",
+		"question": "¿Con cuál entrenador gano Argentina su Medalla Olímpica en 'Atenas 2004' ?",
+		"category": deportes,
+		"correct_answer": "Rubén Magnano",
+		"incorrect_answers": ["Sergio Hernández", "Julio Lamas", "Néstor García"]
+	},
+	{
+		"id": 107,
+		"difficulty": "Fácil",
+		"question": "¿Cuál es el equipo actual del jugador Facundo Campazzo?",
+		"category": deportes,
+		"correct_answer": "Real Madrid",
+		"incorrect_answers": ["Peñarol", "Denver Nuggets", "San Antonio Spurs"]
+	},
+
+
+
+
 ];

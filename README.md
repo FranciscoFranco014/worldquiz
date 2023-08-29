@@ -9,4 +9,6 @@ Currently, two official plugins are available:
 
 
 ##### Deploy #####
---> https://worldquizz.netlify.app/category/Ciencia 
+--> https://worldquizz.netlify.app
+
+
