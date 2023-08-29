@@ -27,15 +27,14 @@ export const Question = ({
         setAnswersRandom(answers.sort(() => Math.random() - 0.5))
         // const correctIndex = answers.findIndex(answer => answer === filteredQuestion.correct_answer);
         // setCorrectAnswerIndex(correctIndex)
-
-
     }, [filteredQuestion])    
 
     //checkea si la rta es correcta o no
-    const checkAnswer = (answerText, index) => {
+    const checkAnswer = (answerText, index ) => {
 		if (answerText === filteredQuestion.correct_answer) {
-			setScore(score + 1);
-		}
+			setScore(score + 1)
+            
+        }
 		setSelectAnswerIndex(index);
 		setAnswered(true);
 	};
@@ -44,19 +43,16 @@ export const Question = ({
         setIndexQuestion(indexQuestion + 1)
         setSelectAnswerIndex(null) // debe iniciar en null xq si lo inicias en numero la rta se marca
         setAnswered(false)  
+       
     }
-
+    
     const onReset = () => {
         setScore('')
         setActiveQuiz(false)
         setIndexQuestion(0)
     }
-
-   
     return(
-        
         <>
-        
             {activeResults ? (
                 
                 <Results 
@@ -65,8 +61,6 @@ export const Question = ({
                     onReset={onReset}
                 />
             ) : (
-                
-             
             <div 
                 className="bg-white flex flex-col justify-between shadow-md shadow-slate-300 w-[600px] 
                             h-[600px] p-10 rounded-lg">
@@ -96,30 +90,30 @@ export const Question = ({
                 <div className="grid grid-cols-2 gap-5">
                     {/* mapear el array de respuestas correctas e incorrects */}
                     {
-                        answersRandom.map((answer, index) => (
+                        answersRandom.map((answer, index, ) => (
                             <button 
-                                className= {`border p-5 rounded-lg flex justify-center items-center transition-all hover:scale-105 ${
-                                    selectAnswerIndex !== null && 
-                                    index === selectAnswerIndex
-                                     ? answer === filteredQuestion.correct_answer
-                                      ? 'bg-green-500' 
-                                      : 'bg-red-500' 
-                                    : ''
-                               
-                                 
-                                }`}
-
-                                key={answer}
-                                onClick={() => checkAnswer(answer, index)}
-                                disabled={answered && selectAnswerIndex !== index}
-                            >
-                                <p className="font-medium text-center text-sm">
-                                    {answer}
-                                </p>
-                            </button>
-                            
+                            className= {`border p-5 rounded-lg flex justify-center items-center transition-all hover:scale-105 ${
+                                index === selectAnswerIndex && 
+                                selectAnswerIndex !== null
+                                 ? answer === filteredQuestion.correct_answer
+                                  ? 'bg-green-500' 
+                                  : 'bg-red-500' 
+                                : ''
+                            } ${
+                                index !== selectAnswerIndex && selectAnswerIndex !== null && answer === filteredQuestion.correct_answer
+                                    ? 'bg-green-500' 
+                                    : ''    
+                            }`}
+                            key={answer}
+                            onClick={() => checkAnswer(answer, index  )}
+                            disabled={answered && selectAnswerIndex !== index}
+                        >
+                             
+                            <p className= 'font-medium text-center text-sm '>
+                            {answer}
+                            </p>
+                        </button>
                         ))
-                        
                     }
                   
                 </div>

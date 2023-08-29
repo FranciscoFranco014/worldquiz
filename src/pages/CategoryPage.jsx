@@ -2,46 +2,35 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { questions, imgs } from "../data"
-
 import { Question } from "../components/Question"
-
 // mezclar las preguntas de cada categoria y reducirla a 5
 const shuffleArray = array => {
 	const newArray = array.sort(() => Math.random() - 0.5);
 	return newArray.slice(0, 5);
 };
 
-
 export function CategoryPage ()  {
-   
     //aca vamos a leer el parametro de la URL
     const { category } = useParams()
-    
     const [imgCategory] = imgs.filter(
 		img => img === `/assets/${category.toLowerCase()}.webp`
-	);
-
+    );
     const [questionsFiltered, setQuestionsFiltered] = useState(
         questions.filter(question => question.category === category)
     )
-    
     const [indexQuestion, setIndexQuestion] = useState(0)
     const [activeQuiz, setActiveQuiz] = useState(false)
+
     useEffect(() => {
         const newQuestions = shuffleArray(questionsFiltered)
         setQuestionsFiltered(newQuestions)
     }, [])
 
-
-    
-
-
     return (
-       
-    <div 
-        className="container flex flex-col items-center justify-center gap-10" 
-        style={{ height: 'calc(100vh - 10rem)'}}
-    > 
+        <div 
+            className="container flex flex-col items-center justify-center gap-10" 
+            style={{ height: 'calc(100vh - 10rem)'}}
+        > 
         {activeQuiz ? (<Question 
             filteredQuestion={questionsFiltered[indexQuestion]}
             setIndexQuestion={setIndexQuestion}
