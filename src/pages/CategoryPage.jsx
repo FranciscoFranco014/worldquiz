@@ -28,7 +28,7 @@ export function CategoryPage ()  {
 
     return (
         <div 
-            className="container flex flex-col items-center justify-center gap-10" 
+            className="container  flex flex-col items-center justify-center gap-10  " 
             style={{ height: 'calc(100vh - 10rem)'}}
         > 
         {activeQuiz ? (<Question 

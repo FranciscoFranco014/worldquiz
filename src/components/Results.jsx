@@ -16,7 +16,7 @@ export const Results = ({
 	}
 
 	return (
-		<div className='bg-white flex flex-col justify-evenly items-center shadow-xl rounded-lg w-[600px] h-[600px] gap-5'>
+		<div className='bg-white flex flex-col justify-evenly items-center shadow-xl rounded-lg  w-full md:w-[600px] h-[600px] p-4 md:p-6 lg:p-8 gap-5'>
 			<h1 className='text-4xl font-bold'>Resultados</h1>
 
 			<div className='flex flex-col gap-5 text-center text-lg font-bold'>

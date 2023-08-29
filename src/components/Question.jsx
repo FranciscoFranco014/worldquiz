@@ -62,8 +62,8 @@ export const Question = ({
                 />
             ) : (
             <div 
-                className="bg-white flex flex-col justify-between shadow-md shadow-slate-300 w-[600px] 
-                            h-[600px] p-10 rounded-lg">
+                className="bg-white flex flex-col md:max-xl:flex justify-between shadow-md shadow-slate-300
+                    w-full md:w-[600px] h-[600px] p-4 md:p-6 lg:p-8 rounded-lg">
                 
                     <div className="flex justify-between">
                         <span className="text-xl font-bold">
