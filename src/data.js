@@ -929,7 +929,7 @@ export const questions = [
 		difficulty: 'Fácil',
 		question: '¿Cuál de los siguientes equipos es conocido por su dominio en la escena profesional de "Counter-Strike: Global Offensive" (CSGO)?',
 		category: esports,
-		correct_answer: 'Astralis',
+		correct_answer: 'Vitality',
 		incorrect_answers: ['Virtus.pro', 'Fnatic', 'Team Liquid']
 	},
 	{
@@ -1016,7 +1016,7 @@ export const questions = [
 		id: 97,
 		difficulty: 'Difícil',
 		question: '¿Cuál es el nombre del equipo de fútbol que es el máximo rival de Newells Old Boys?',
-		category: esports,
+		category: deportes,
 		correct_answer: 'Rosario central',
 		incorrect_answers:  ["Boca Juniors", "Independiente", "Racing Club"]
 	},

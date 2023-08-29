@@ -6,7 +6,7 @@ import { Question } from "../components/Question"
 // mezclar las preguntas de cada categoria y reducirla a 5
 const shuffleArray = array => {
 	const newArray = array.sort(() => Math.random() - 0.5);
-	return newArray.slice(0, 5);
+	return newArray.slice(0, 10);
 };
 
 export function CategoryPage ()  {
