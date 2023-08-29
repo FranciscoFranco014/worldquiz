@@ -1077,31 +1077,403 @@ export const questions = [
 		incorrect_answers: ["Andrés Nocioni", "Carlos Delfino", "Luis Scola"]
 	},
 	{
-		"id": 105,
-		"difficulty": "Fácil",
-		"question": "¿Cuál es el equipo más grande del Fútbol Argentino?",
-		"category": deportes,
-		"correct_answer": "Boca Juniors",
-		"incorrect_answers": ["Rosario Central", "San Lorenzo", "River"]
+		id: 105,
+		difficulty: "Fácil",
+		question: "¿Cuál es el equipo más grande del Fútbol Argentino?",
+		category: deportes,
+		correct_answer: "Boca Juniors",
+		incorrect_answers: ["Rosario Central", "San Lorenzo", "River"]
 	},
 	{
-		"id": 106,
-		"difficulty": "Medio",
-		"question": "¿Con cuál entrenador gano Argentina su Medalla Olímpica en 'Atenas 2004' ?",
-		"category": deportes,
-		"correct_answer": "Rubén Magnano",
-		"incorrect_answers": ["Sergio Hernández", "Julio Lamas", "Néstor García"]
+		id: 106,
+		difficulty: "Medio",
+		question: "¿Con cuál entrenador gano Argentina su Medalla Olímpica en 'Atenas 2004' ?",
+		category: deportes,
+		correct_answer: "Rubén Magnano",
+		incorrect_answers: ["Sergio Hernández", "Julio Lamas", "Néstor García"]
 	},
 	{
-		"id": 107,
-		"difficulty": "Fácil",
-		"question": "¿Cuál es el equipo actual del jugador Facundo Campazzo?",
-		"category": deportes,
-		"correct_answer": "Real Madrid",
-		"incorrect_answers": ["Peñarol", "Denver Nuggets", "San Antonio Spurs"]
+		id: 107,
+		difficulty: "Fácil",
+		question: "¿Cuál es el equipo actual del jugador Facundo Campazzo?",
+		category: deportes,
+		correct_answer: "Real Madrid",
+		incorrect_answers: ["Peñarol", "Denver Nuggets", "San Antonio Spurs"]
 	},
-
-
-
-
-];
+	{
+		id: 108,
+		difficulty: "Medio",
+		question: "¿De que provincia es oriundo Gabriel 'El tortu' Deck?",
+		category: deportes,
+		correct_answer: "Santiago del Estero",
+		incorrect_answers: ["Santa Fe", "Tucumán", "Salta"]
+	},
+	{
+		id: 109,
+		difficulty: "Medio",
+		question: "¿Qué órgano humano es responsable de bombear sangre a través del cuerpo?",
+		category: ciencia,
+		correct_answer: "Corazón",
+		incorrect_answers:  ["Hígado", "Cerebro", "Riñón"]
+	},
+	{
+		id: 110,
+		difficulty: "Medio",
+		question: "¿Cuál de los siguientes equipos de fútbol argentino es conocido como 'El Pincha'?",
+		category: deportes,
+		correct_answer: "Estudiantes de La Plata",
+		incorrect_answers: ["Buenos Aires", "La Plata", "Córdoba"]
+	},
+	{
+		id: 111,
+		difficulty: "Medio",
+		question: "¿En qué deporte la selección femenina de Argentina es conocida como 'Las Leonas'?",
+		category: deportes,
+		correct_answer: "Hockey",
+		incorrect_answers:  ["Atletismo", "Tenis", "Baloncesto"]
+	},
+	{
+		id: 112,
+		difficulty: "Medio",
+		question: "¿En qué deporte el término 'grand slam' se refiere a ganar los cuatro torneos principales en un mismo año?",
+		category: deportes,
+		correct_answer: "Tenis",
+		incorrect_answers: ["Golf", "Béisbol", "Rugby"]
+	},
+	{
+		id: 113,
+		difficulty: "Fácil",
+		question: "¿Quién es considerado el padre de la filosofía occidental?",
+		category: filosofia,
+		correct_answer: "Sócrates",
+		incorrect_answers: ["Platón", "Aristóteles", "Confucio"]
+	},
+	{
+		id: 114,
+		difficulty: "Fácil",
+		question: "¿Cuál de las siguientes ramas de la filosofía se centra en la ética y la moral?",
+		category: filosofia,
+		correct_answer: "Ética",
+		incorrect_answers: ["Estética", "Epistemología", "Metafísica"]
+	},
+	{
+		id: 115,
+		difficulty: "Medio",
+		question: "¿Quién escribió 'Así habló Zaratustra', una obra clave en la filosofía existencialista?",
+		category: filosofia,
+		correct_answer: "Friedrich Nietzsche",
+		incorrect_answers: ["Jean-Paul Sartre", "Albert Camus", "Søren Kierkegaard"]
+	},
+	{
+		id: 116,
+		difficulty: "Difícil",
+		question: "¿Cuál es el concepto filosófico que se refiere a la búsqueda de la verdad a través del razonamiento?",
+		category: filosofia,
+		correct_answer: "Lógica",
+		incorrect_answers: ["Metafísica", "Ética", "Epistemología"]
+	},
+	{
+		id: 117,
+		difficulty: "Difícil",
+		question: "¿En qué rama de la ciencia se estudia la interacción entre organismos y su entorno?",
+		category: ciencia,
+		correct_answer: "Ecología",
+		incorrect_answers: ["Física", "Química", "Biología"]
+	},
+	{
+		id: 118,
+		difficulty: "Difícil",
+		question: "¿Qué partícula subatómica se encuentra en el núcleo de un átomo?",
+		category: ciencia,
+		correct_answer: "Protón",
+		incorrect_answers: ["Electrón", "Neutrón", "Positrón"]
+	},
+	{
+		id: 119,
+		difficulty: "Fácil",
+		question: "¿Qué antiguo filósofo griego es conocido por su teoría de que todo está hecho de átomos?",
+		category: filosofia,
+		correct_answer: "Demócrito",
+		incorrect_answers: ["Sócrates", "Aristóteles", "Platón"]
+	},
+	{
+		id: 120,
+		difficulty: "Medio",
+		question: "¿En qué obra de Platón se plantea la teoría de las 'Ideas' o 'Formas'?",
+		category: "Filosofía",
+		correct_answer: "La República",
+		incorrect_answers: ["El Banquete", "Fedón", "El Sofista"]
+	},
+	{
+		id: 121,
+		difficulty: "Difícil",
+		question: "¿Cuál de las siguientes corrientes filosóficas se caracteriza por su enfoque en el individualismo y la autenticidad?",
+		category: filosofia,
+		correct_answer: "Existencialismo",
+		incorrect_answers: ["Racionalismo", "Empirismo", "Utilitarismo"]
+	},
+	{
+		id: 122,
+		difficulty: "Difícil",
+		question: "¿Quién es conocido por su frase 'Cogito, ergo sum' (Pienso, luego existo)?",
+		category: filosofia,
+		correct_answer: "René Descartes",
+		incorrect_answers: ["Immanuel Kant", "David Hume", "John Locke"]
+	},
+	{
+		id: 123,
+		difficulty: "Difícil",
+		question: "¿Qué filósofo alemán es conocido por su obra 'El Ser y la Nada'?",
+		category: filosofia,
+		correct_answer: "Jean-Paul Sartre",
+		incorrect_answers: ["Friedrich Nietzsche", "Albert Camus", "Søren Kierkegaard"]
+	},
+	{
+		id: 124,
+		difficulty: "Fácil",
+		question: "¿Cuál es la novela de Gabriel García Márquez que narra la historia de Florentino Ariza y Fermina Daza?",
+		category: literatura,
+		correct_answer: "El amor en los tiempos del cólera",
+		incorrect_answers: ["Cien años de soledad", "Crónica de una muerte anunciada", "La hojarasca"]
+	},
+	{
+		id: 125,
+		difficulty: "Fácil",
+		question: "¿Quién escribió 'Los versos satánicos', una controvertida novela que mezcla realidad y fantasía?",
+		category: literatura,
+		correct_answer: "Salman Rushdie",
+		incorrect_answers: ["Gabriel García Márquez", "Haruki Murakami", "Jorge Luis Borges"]
+	},
+	{
+		id: 126,
+		difficulty: "Fácil",
+		question: "¿Qué escritor chileno es conocido por su novela 'La casa de los espíritus'?",
+		category: literatura,
+		correct_answer: "Isabel Allende",
+		incorrect_answers: ["Pablo Neruda", "Jorge Luis Borges", "Gabriel García Márquez"]
+	},
+	{
+		id: 127,
+		difficulty: "Medio",
+		question: "¿Quién es el autor de 'Conversación en La Catedral', una de las obras más importantes de la literatura peruana?",
+		category: literatura,
+		correct_answer: "Mario Vargas Llosa",
+		incorrect_answers: ["Julio Cortázar", "Gabriel García Márquez", "Pablo Neruda"]
+	},
+	{
+		id: 128,
+		difficulty: "Medio",
+		question: "¿En qué país nació el poeta y novelista chileno Pablo Neruda?",
+		category: literatura,
+		correct_answer: "Chile",
+		incorrect_answers: ["Argentina", "Colombia", "México"]
+	},
+	{
+		id: 129,
+		difficulty: "Medio",
+		question: "¿Cuál de las siguientes novelas es considerada una obra fundamental del realismo mágico?",
+		category: literatura,
+		correct_answer: "Pedro Páramo",
+		incorrect_answers: ["Cien años de soledad", "Rayuela", "La casa de los espíritus"]
+	},
+	{
+		id: 130,
+		difficulty: "Difícil",
+		question: "¿Quién es el autor de 'Pedro Páramo', una novela influyente en la literatura latinoamericana?",
+		category: literatura,
+		correct_answer: "Juan Rulfo",
+		incorrect_answers: ["Octavio Paz", "Carlos Fuentes", "Gabriel García Márquez"]
+	},
+	{
+		id: 131,
+		difficulty: "Difícil",
+		question: "¿Cuál de las siguientes obras es una novela de José María Arguedas que retrata la vida en los Andes peruanos?",
+		category: literatura,
+		correct_answer: "Los ríos profundos",
+		incorrect_answers: ["La casa verde", "Pantaleón y las visitadoras", "Conversación en La Catedral"]
+	},
+	{
+		id: 132,
+		difficulty: "Difícil",
+		question: "¿Quién es el autor de 'El túnel', una novela considerada precursora de la literatura existencialista?",
+		category: literatura,
+		correct_answer: "Ernesto Sabato",
+		incorrect_answers: ["Jorge Luis Borges", "Julio Cortázar", "Gabriel García Márquez"]
+	},
+	{
+		id: 133,
+		difficulty: "Fácil",
+		question: "¿Cuál de los siguientes escritores es conocido por su novela 'La ciudad y los perros'?",
+		category: literatura,
+		correct_answer: "Mario Vargas Llosa",
+		incorrect_answers: ["Julio Cortázar", "Gabriel García Márquez", "Pablo Neruda"]
+	},
+	{
+		id: 134,
+		difficulty: "Medio",
+		question: "¿Cuál de las siguientes novelas es considerada una obra fundamental del realismo mágico?",
+		category: literatura,
+		correct_answer: "Pedro Páramo",
+		incorrect_answers: ["Cien años de soledad", "Rayuela", "La casa de los espíritus"]
+	},
+	{
+		id: 135,
+		difficulty: "Fácil",
+		question: "¿Cuál es el estándar de red inalámbrica más utilizado en la mayoría de los dispositivos hoy en día?",
+		category: tecnologia,
+		correct_answer: "Wi-Fi",
+		incorrect_answers: ["Bluetooth", "NFC", "4G"]
+	},
+	{
+		id: 136,
+		difficulty: "Fácil",
+		question: "¿Qué empresa es conocida por desarrollar la serie de teléfonos inteligentes iPhone?",
+		category: tecnologia,
+		correct_answer: "Apple",
+		incorrect_answers: ["Samsung", "Google", "Microsoft"]
+	},
+	{
+		id: 137,
+		difficulty: "Fácil",
+		question: "¿Qué siglas representan el término 'HTML', utilizado en el diseño de páginas web?",
+		category: tecnologia,
+		correct_answer: "HyperText Markup Language",
+		incorrect_answers: ["High Tech Modern Language", "Home Tool Management Language", "Hyper Transfer Multimedia Language"]
+	},
+	{
+		id: 138,
+		difficulty: "Medio",
+		question: "¿Cuál es la técnica que implica entrenar a las máquinas para que puedan aprender a través de la experiencia y mejorar con el tiempo?",
+		category: tecnologia,
+		correct_answer: "Aprendizaje automático (Machine Learning)",
+		incorrect_answers: ["Realidad virtual", "Ciberseguridad", "Inteligencia artificial"]
+	},
+	{
+		id: 139,
+		difficulty: "Medio",
+		question: "¿Qué tecnología utiliza ondas de radio para identificar y rastrear objetos que tienen una etiqueta conectada?",
+		category: tecnologia,
+		correct_answer: "RFID (Identificación por Radiofrecuencia)",
+		incorrect_answers: ["NFC", "Bluetooth", "Wi-Fi"]
+	},
+	{
+		id: 140,
+		difficulty: "Medio",
+		question: "¿Cuál de las siguientes empresas es conocida por desarrollar el sistema operativo Android?",
+		category: tecnologia,
+		correct_answer: "Google",
+		incorrect_answers: ["Apple", "Microsoft", "Samsung"]
+	},
+	{
+		id: 141,
+		difficulty: "Difícil",
+		question: "¿Qué tecnología emergente permite la conexión y comunicación entre dispositivos y objetos cotidianos a través de Internet?",
+		category: tecnologia,
+		correct_answer: "Internet de las Cosas (IoT)",
+		incorrect_answers: ["Inteligencia Artificial", "Realidad Virtual", "Blockchain"]
+	},
+	{
+		id: 142,
+		difficulty: "Difícil",
+		question: "¿Cuál es la técnica de encriptación que utiliza una clave pública y una clave privada para proteger la comunicación?",
+		category: tecnologia,
+		correct_answer: "Criptografía de clave pública (RSA)",
+		incorrect_answers: ["SHA-256", "AES", "SSL"]
+	},
+	{
+		id: 143,
+		difficulty: "Difícil",
+		question: "¿Qué tipo de ataque informático se basa en enviar una gran cantidad de solicitudes a un servidor para colapsarlo?",
+		category: tecnologia,
+		correct_answer: "Ataque de denegación de servicio (DDoS)",
+		incorrect_answers: ["Phishing", "Ransomware", "Hacking"]
+	},
+	{
+		id: 144,
+		difficulty: "Difícil",
+		question: "¿Cuál es el término utilizado para describir el proceso de ocultar información en otro tipo de archivo, como una imagen o un audio?",
+		category: tecnologia,
+		correct_answer: "Esteganografía",
+		incorrect_answers: ["Criptografía", "Desarrollo web", "Codificación binaria"]
+	},
+	{
+		id: 145,
+		difficulty: "Difícil",
+		question: "¿Qué protocolo de seguridad se utiliza para cifrar la conexión entre un navegador web y un sitio web, garantizando que los datos estén protegidos durante la transmisión?",
+		category: tecnologia,
+		correct_answer: "SSL/TLS",
+		incorrect_answers: ["HTTP", "SMTP", "FTP"]
+	},
+	{
+		id: 146,
+		difficulty: "Difícil",
+		question: "¿Cuál de las siguientes tecnologías se basa en la emulación de un entorno físico para ejecutar múltiples sistemas operativos en un solo host?",
+		category: tecnologia,
+		correct_answer: "Virtualización",
+		incorrect_answers: ["Ciberseguridad", "Inteligencia Artificial", "Blockchain"]
+	},
+	{
+		id: 147,
+		difficulty: "Fácil",
+		question: "¿Cuál es el lenguaje de programación utilizado comúnmente para el desarrollo de sitios web y aplicaciones web?",
+		category: tecnologia,
+		correct_answer: "JavaScript",
+		incorrect_answers: ["Python", "Java", "C++"]
+	},
+	{
+		id: 148,
+		difficulty: "Fácil",
+		question: "¿Qué empresa es conocida por desarrollar el motor de búsqueda más popular del mundo?",
+		category: tecnologia,
+		correct_answer: "Google",
+		incorrect_answers: ["Bing", "Yahoo", "DuckDuckGo"]
+	},
+	{
+		id: 149,
+		difficulty: "Fácil",
+		question: "¿Qué dispositivo portátil de lectura de libros electrónicos es fabricado por Amazon?",
+		category: tecnologia,
+		correct_answer: "Kindle",
+		incorrect_answers: ["Nook", "Kobo", "iPad"]
+	},
+	{
+		id: 150,
+		difficulty: "Medio",
+		question: "¿Qué término se refiere a la capacidad de una máquina para comprender y responder al lenguaje humano de manera natural?",
+		category: tecnologia,
+		correct_answer: "Procesamiento del Lenguaje Natural (NLP)",
+		incorrect_answers: ["Aprendizaje Automático", "Realidad Aumentada", "Inteligencia Artificial"]
+	},
+	{
+		id: 151,
+		difficulty: "Medio",
+		question: "¿Cuál es el nombre de la tecnología que permite a las baterías cargar rápidamente y retener una carga más duradera?",
+		category: tecnologia,
+		correct_answer: "Carga rápida (Fast Charging)",
+		incorrect_answers: ["Batería inteligente", "Carga inalámbrica", "Células de combustible"]
+	},
+	{
+		id: 152,
+		difficulty: "Medio",
+		question: "¿Cuál de las siguientes tecnologías es utilizada para rastrear el movimiento y la posición en el espacio tridimensional?",
+		category: tecnologia,
+		correct_answer: "Realidad Virtual (VR)",
+		incorrect_answers: ["Realidad Aumentada (AR)", "Inteligencia Artificial (AI)", "Internet de las Cosas (IoT)"]
+	},
+	{
+		id: 153,
+		difficulty: "Difícil",
+		question: "¿Cuál es el término que describe la tecnología que permite el seguimiento ocular para controlar dispositivos y aplicaciones?",
+		category: tecnologia,
+		correct_answer: "Seguimiento ocular (Eye Tracking)",
+		incorrect_answers: ["Reconocimiento de voz", "Control gestual", "Biorretroalimentación"]
+	},
+	{
+		id: 154,
+		difficulty: "Difícil",
+		question: "¿Cuál de las siguientes tecnologías se utiliza para verificar y garantizar la autenticidad de un conjunto de datos?",
+		category: tecnologia,
+		correct_answer: "Blockchain",
+		incorrect_answers: ["Inteligencia Artificial", "Realidad Virtual", "Internet de las Cosas"]
+	}
+	];
